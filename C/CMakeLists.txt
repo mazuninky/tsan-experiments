@@ -5,6 +5,6 @@ find_library(PTHREAD_LIBRARY pthread)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(TSanTest example1.cpp example2.cpp example4.c example5.c example3.c)
+add_executable(TSanTest example1.c example2.c example4.c example5.c example3.c example6.c)
 
 target_link_libraries(TSanTest ${PTHREAD_LIBRARY})

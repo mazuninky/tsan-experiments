@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mazuninky/dev/toResearch/TSanTest
+CMAKE_SOURCE_DIR = /Users/mazuninky/dev/toResearch/TSanTest/C
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mazuninky/dev/toResearch/TSanTest/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/mazuninky/dev/toResearch/TSanTest/C/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mazuninky/dev/toResearch/TSanTest/cmake-build-debug/CMakeFiles /Users/mazuninky/dev/toResearch/TSanTest/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mazuninky/dev/toResearch/TSanTest/C/cmake-build-debug/CMakeFiles /Users/mazuninky/dev/toResearch/TSanTest/C/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mazuninky/dev/toResearch/TSanTest/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mazuninky/dev/toResearch/TSanTest/C/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,32 +177,32 @@ example2.cpp.s:
 	$(MAKE) -f CMakeFiles/TSanTest.dir/build.make CMakeFiles/TSanTest.dir/example2.cpp.s
 .PHONY : example2.cpp.s
 
-example3.o: example3.cpp.o
+example3.o: example3.c.o
 
 .PHONY : example3.o
 
 # target to build an object file
-example3.cpp.o:
-	$(MAKE) -f CMakeFiles/TSanTest.dir/build.make CMakeFiles/TSanTest.dir/example3.cpp.o
-.PHONY : example3.cpp.o
+example3.c.o:
+	$(MAKE) -f CMakeFiles/TSanTest.dir/build.make CMakeFiles/TSanTest.dir/example3.c.o
+.PHONY : example3.c.o
 
-example3.i: example3.cpp.i
+example3.i: example3.c.i
 
 .PHONY : example3.i
 
 # target to preprocess a source file
-example3.cpp.i:
-	$(MAKE) -f CMakeFiles/TSanTest.dir/build.make CMakeFiles/TSanTest.dir/example3.cpp.i
-.PHONY : example3.cpp.i
+example3.c.i:
+	$(MAKE) -f CMakeFiles/TSanTest.dir/build.make CMakeFiles/TSanTest.dir/example3.c.i
+.PHONY : example3.c.i
 
-example3.s: example3.cpp.s
+example3.s: example3.c.s
 
 .PHONY : example3.s
 
 # target to generate assembly for a file
-example3.cpp.s:
-	$(MAKE) -f CMakeFiles/TSanTest.dir/build.make CMakeFiles/TSanTest.dir/example3.cpp.s
-.PHONY : example3.cpp.s
+example3.c.s:
+	$(MAKE) -f CMakeFiles/TSanTest.dir/build.make CMakeFiles/TSanTest.dir/example3.c.s
+.PHONY : example3.c.s
 
 example4.o: example4.c.o
 
@@ -258,32 +258,32 @@ example5.c.s:
 	$(MAKE) -f CMakeFiles/TSanTest.dir/build.make CMakeFiles/TSanTest.dir/example5.c.s
 .PHONY : example5.c.s
 
-tine_race.o: tine_race.c.o
+example6.o: example6.c.o
 
-.PHONY : tine_race.o
+.PHONY : example6.o
 
 # target to build an object file
-tine_race.c.o:
-	$(MAKE) -f CMakeFiles/TSanTest.dir/build.make CMakeFiles/TSanTest.dir/tine_race.c.o
-.PHONY : tine_race.c.o
+example6.c.o:
+	$(MAKE) -f CMakeFiles/TSanTest.dir/build.make CMakeFiles/TSanTest.dir/example6.c.o
+.PHONY : example6.c.o
 
-tine_race.i: tine_race.c.i
+example6.i: example6.c.i
 
-.PHONY : tine_race.i
+.PHONY : example6.i
 
 # target to preprocess a source file
-tine_race.c.i:
-	$(MAKE) -f CMakeFiles/TSanTest.dir/build.make CMakeFiles/TSanTest.dir/tine_race.c.i
-.PHONY : tine_race.c.i
+example6.c.i:
+	$(MAKE) -f CMakeFiles/TSanTest.dir/build.make CMakeFiles/TSanTest.dir/example6.c.i
+.PHONY : example6.c.i
 
-tine_race.s: tine_race.c.s
+example6.s: example6.c.s
 
-.PHONY : tine_race.s
+.PHONY : example6.s
 
 # target to generate assembly for a file
-tine_race.c.s:
-	$(MAKE) -f CMakeFiles/TSanTest.dir/build.make CMakeFiles/TSanTest.dir/tine_race.c.s
-.PHONY : tine_race.c.s
+example6.c.s:
+	$(MAKE) -f CMakeFiles/TSanTest.dir/build.make CMakeFiles/TSanTest.dir/example6.c.s
+.PHONY : example6.c.s
 
 # Help Target
 help:
@@ -309,9 +309,9 @@ help:
 	@echo "... example5.o"
 	@echo "... example5.i"
 	@echo "... example5.s"
-	@echo "... tine_race.o"
-	@echo "... tine_race.i"
-	@echo "... tine_race.s"
+	@echo "... example6.o"
+	@echo "... example6.i"
+	@echo "... example6.s"
 .PHONY : help
 
 

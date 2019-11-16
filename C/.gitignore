@@ -16,3 +16,4 @@ _deps
 *.a
 *.out
 .idea
+cmake-build-debug

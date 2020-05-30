@@ -26,7 +26,10 @@ tsan_example6:
 	clang example6.c -fsanitize=thread -fPIE -pie -g -O1 -o tsan_out6.a
 
 tsan_example7:
-	clang example7.c -fsanitize=thread -fPIE -pie -g -O1 -o tsan_out7.a
+	clang++ example7.cpp -fsanitize=thread -fPIE -pie -g -o tsan_out7.a; ./tsan_out7.a
+
+example7:
+	clang++ example7.cpp -o tsan_out7.a; ./tsan_out7.a
 
 tsan_example8:
 	clang example8.c -fsanitize=thread -fPIE -pie -g -O1 -o tsan_out8.a
